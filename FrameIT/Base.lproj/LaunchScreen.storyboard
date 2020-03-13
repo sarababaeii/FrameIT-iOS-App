@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <userGuides>
+                            <userLayoutGuide location="448" affinity="minY"/>
+                            <userLayoutGuide location="207" affinity="minX"/>
+                        </userGuides>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oaM-9w-gJd">
+                                <rect key="frame" x="52.5" y="148.5" width="270" height="370"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="BTV-3M-z2u"/>
+                                    <constraint firstAttribute="width" constant="270" id="O2V-AV-r4V"/>
+                                    <constraint firstAttribute="height" constant="370" id="dg1-vn-9GP"/>
+                                    <constraint firstAttribute="height" constant="300" id="fsH-RK-NFG"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="BTV-3M-z2u"/>
+                                        <exclude reference="fsH-RK-NFG"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="BTV-3M-z2u"/>
+                                        <exclude reference="O2V-AV-r4V"/>
+                                        <exclude reference="dg1-vn-9GP"/>
+                                        <include reference="fsH-RK-NFG"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="FrameIT-logo" translatesAutoresizingMaskIntoConstraints="NO" id="9J8-dj-a5E">
+                                <rect key="frame" x="52.5" y="148.5" width="270" height="270"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="LCl-Uw-a2q"/>
+                                    <constraint firstAttribute="height" constant="270" id="wEX-IY-9Vr"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="LCl-Uw-a2q"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="LCl-Uw-a2q"/>
+                                        <exclude reference="wEX-IY-9Vr"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="FrameIT-name" translatesAutoresizingMaskIntoConstraints="NO" id="x0E-jZ-ica">
+                                <rect key="frame" x="52.5" y="443.5" width="270" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="UkY-uz-cwi"/>
+                                    <constraint firstAttribute="height" constant="50" id="Utv-nD-is8"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Utv-nD-is8"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="Utv-nD-is8"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.022519206628203392" green="0.7463875412940979" blue="0.72141361236572266" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="x0E-jZ-ica" firstAttribute="bottom" secondItem="oaM-9w-gJd" secondAttribute="bottom" id="0KA-0h-vqT"/>
+                            <constraint firstItem="x0E-jZ-ica" firstAttribute="leading" secondItem="oaM-9w-gJd" secondAttribute="leading" id="1qm-z3-PfB"/>
+                            <constraint firstItem="oaM-9w-gJd" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="MZp-eV-BKW"/>
+                            <constraint firstItem="9J8-dj-a5E" firstAttribute="trailing" secondItem="oaM-9w-gJd" secondAttribute="trailing" id="gpt-vt-B2b"/>
+                            <constraint firstItem="9J8-dj-a5E" firstAttribute="leading" secondItem="oaM-9w-gJd" secondAttribute="leading" id="tF4-Ve-RHj"/>
+                            <constraint firstItem="x0E-jZ-ica" firstAttribute="trailing" secondItem="oaM-9w-gJd" secondAttribute="trailing" id="uQF-FV-aQt"/>
+                            <constraint firstItem="9J8-dj-a5E" firstAttribute="top" secondItem="oaM-9w-gJd" secondAttribute="top" id="x74-dc-Qqo"/>
+                            <constraint firstItem="oaM-9w-gJd" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="z1n-of-EwQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="FrameIT-logo" width="387.5" height="385.5"/>
+        <image name="FrameIT-name" width="564.5" height="95"/>
+    </resources>
+</document>
